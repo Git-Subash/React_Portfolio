@@ -39,7 +39,7 @@ export default function Navbar() {
               </div>
               <div className="flex flex-1 items-center  justify-center sm:items-stretch sm:justify-between lg:justify-between ">
                 <div className="flex flex-shrink-0 items-center ">
-                <a href="#"> <h1  className=" h-8 w-auto shrink-0   text-[#7eca9c] text-3xl md:pt-2  items-center sm:pl-14 md:pl-14 lg:pl-14 " >Porfolio</h1></a> 
+                <a href="#"> <h1  className=" h-8 w-auto shrink-0   text-[#7eca9c] text-3xl md:pt-2  items-center sm:pl-14 md:pl-14 lg:pl-14 " >Portfolio</h1></a> 
                 </div>
                 <div className="hidden sm:ml-30 my-10 lg:ml-96 sm:block  lg:pt-4 md:pt-4  ">
                   <div className="flex space-x-4">

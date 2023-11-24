@@ -63,7 +63,7 @@ function Colors(props) {
                 restDelta: 0.001
               }
             }}
-      className='' >
+          className='' >
             <img src={props.displayImg} width={700}  className='border-4 md:mx-auto border-[#caede2]' />
             <div className=' mx-auto'>
             <a className='' href={props.displayImg} download>
