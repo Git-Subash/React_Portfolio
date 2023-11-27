@@ -3,6 +3,7 @@ import Colors from '../props/Colors'
 import blueprintBg from '../assets/backgrounds/blueprint.png'
 import sketchup from '../assets/logos/sketchup.png'
 import p1 from '../assets/designs/P1.png'
+import Bedroom from '../models/bedroom'
 
 
 export const Blueprint = () => {
@@ -31,8 +32,9 @@ export const Blueprint = () => {
                 Description= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In libero cupiditate, voluptate quisquam quos iste necessitatibus molestiae optio aspernatur nemo.'
                 logo={sketchup}
                 logoName= 'sketchup'
-                displayImg= {p1}
-                downloadImg={p1}
+                model = {<Bedroom  scale={0.1} rotation-y={3.5}/>}
+                camera = {{ position :[-5.9,7.6,10], fov: 1 }}
+                downloadImg={''}
                 colorTitle='Colors Used'
                 color1='#c3c3c3' 
                 color2='#ba9a65'
@@ -56,8 +58,9 @@ export const Blueprint = () => {
                 Description= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In libero cupiditate, voluptate quisquam quos iste necessitatibus molestiae optio aspernatur nemo.'
                 logo={sketchup}
                 logoName= 'sketchup'
-                displayImg= {p1}
-                downloadImg={p1}
+                model = {<Bedroom  scale={0.1} rotation-y={3.5}/>}
+                camera = {{ position :[-5.9,7.6,10], fov: 1 }}
+                downloadImg={'p1'}
                 colorTitle='Colors Used'
                 color1='#c3c3c3' 
                 color2='#ba9a65'
@@ -83,8 +86,9 @@ export const Blueprint = () => {
                 Description= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In libero cupiditate, voluptate quisquam quos iste necessitatibus molestiae optio aspernatur nemo.'
                 logo={sketchup}
                 logoName= 'sketchup'
-                displayImg= {p1}
-                downloadImg={p1}
+                model = {<Bedroom  scale={0.1} rotation-y={3.5}/>}
+                camera = {{ position :[-5.9,7.6,10], fov: 1 }}
+                downloadImg={'p1'}
                 colorTitle='Colors Used'
                 color1='#c3c3c3' 
                 color2='#ba9a65'
@@ -107,8 +111,9 @@ export const Blueprint = () => {
                 Description= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In libero cupiditate, voluptate quisquam quos iste necessitatibus molestiae optio aspernatur nemo.'
                 logo={sketchup}
                 logoName= 'sketchup'
-                displayImg= {p1}
-                downloadImg={p1}
+                model = {<Bedroom  scale={0.1} rotation-y={3.5}/>}
+                camera = {{ position :[-5.9,7.6,10], fov: 1 }}
+                downloadImg={'p1'}
                 colorTitle='Colors Used'
                 color1='#c3c3c3' 
                 color2='#ba9a65'

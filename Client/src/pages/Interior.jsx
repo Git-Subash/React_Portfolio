@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import interiorBg from '../assets/backgrounds/interior.png'
 import sketchup from '../assets/logos/sketchup.png'
-import bedroom from '../assets/designs/bedroom.jpg'
+import Bedroom from '../models/bedroom'
 
 
 
@@ -43,8 +43,9 @@ export const Interior = () => {
                 Description= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In libero cupiditate, voluptate quisquam quos iste necessitatibus molestiae optio aspernatur nemo.'
                 logo={sketchup}
                 logoName= 'sketchup'
-                displayImg= {bedroom}
-                downloadImg={bedroom}
+                 model = {<Bedroom  scale={0.1} rotation-y={3.5}/>}
+                 camera = {{ position :[-5.9,7.6,10], fov: 1 }}
+                downloadImg={''}
                 color1='#0b3450' 
                 color2='#815f46'
                 color3 ='#64676c'
@@ -68,8 +69,9 @@ export const Interior = () => {
                 Description= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In libero cupiditate, voluptate quisquam quos iste necessitatibus molestiae optio aspernatur nemo.'
                 logo={sketchup}
                 logoName= 'sketchup'
-                displayImg= {bedroom}
-                downloadImg={bedroom}
+                model = {<Bedroom  scale={0.1} rotation-y={3.5}/>}
+                camera = {{ position :[-5.9,7.6,10], fov: 1 }}
+                downloadImg={''}
                 name='Colors Used' 
                 color1='#0b3450' 
                 color2='#815f46'

@@ -2,32 +2,25 @@ import React from 'react'
 import Colors from '../props/Colors'
 import elevationBg from '../assets/backgrounds/elevation.svg'
 import sketchup from '../assets/logos/sketchup.png'
-import p1 from '../assets/designs/P1.png'
-
-
-
-
+// import Bedroom from '../models/bedroom'
+import Elev from '../models/elev'
 
 
  export  const Elevation = () => {
-  // const { scrollYProgress } = useScroll(); 
-
+  
+  const model = '../assets/3d/bedroom.gbl'
   
   return (
     <main>
     {/* page-1 */}
     <div id='Projects' className='min-h-screen bg-fixed px-10 xs:px-0 bg-gray-700  scroll-behavior: smooth' style={{backgroundImage : `url(${elevationBg})`}}>
          <div className='pt-40 items-center text-[#a6c69f] '>
-         {/* data-aos="fade-right" data-aos-easing="ease-out"
-     data-aos-duration="4000" */}
     <div className='' 
     > 
      <h1 className=' md:text-7xl  text-6xl font-wal tracking-wide pt-40 text-center   font-thin' data-aos="fade-up"
      data-aos-easing="3000"
      data-aos-duration="1500"> <div className=' text-sm text-center mb-2  '>01 personal project</div> ELEVATION  PROJECTS </h1>
-     {/* data-aos="fade-up"
-     data-aos-easing="3000"
-     data-aos-duration="1500" */}
+
 </div>
     </div>
     </div>
@@ -41,8 +34,10 @@ import p1 from '../assets/designs/P1.png'
                 Description= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In libero cupiditate, voluptate quisquam quos iste necessitatibus molestiae optio aspernatur nemo.'
                 logo={sketchup}
                 logoName= 'sketchup'
-                displayImg= {p1}
-                downloadImg={p1}
+                // model = {<Bedroom  scale={0.1} rotation-y={3.5}/>}
+                model ={<Elev scale={0.01} rotation-y={2.6} />}
+                camera = {{ position :[-5.9,3.6,10], fov: 3 }}
+                downloadImg={model}
                 colorTitle='Colors Used'
                 color1='#c3c3c3' 
                 color2='#ba9a65'
@@ -68,8 +63,9 @@ import p1 from '../assets/designs/P1.png'
                  Description= 'Lorem ipsum dolor sit amet consectetur adipisicing elit. In libero cupiditate, voluptate quisquam quos iste necessitatibus molestiae optio aspernatur nemo.'
                  logo={sketchup}
                  logoName= 'sketchup'
-                 displayImg= {p1}
-                 downloadImg={p1}
+                 model ={<Elev scale={0.01} rotation-y={2.6} />}
+                 camera = {{ position :[-5.9,3.6,10], fov: 3 }}
+                 downloadImg={model}
                 color1='#c3c3c3' 
                 color2='#ba9a65'
                 color3 ='#758886'

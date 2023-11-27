@@ -1,17 +1,23 @@
-import React from 'react'
 import Section  from './Section'
 import {Download } from 'lucide-react'
 import {Button} from "@material-tailwind/react";
-import {motion} from "framer-motion"
+// import {Html } from "@react-three/drei";
+// import {motion} from "framer-motion"
+import React ,{ Suspense } from 'react'
+import { Canvas } from "@react-three/fiber"
+
+import { Stage,PresentationControls , ContactShadows, OrbitControls } from '@react-three/drei';
 
 
 function Colors(props) {
   return (
-    <div className='pt-20  ' style={{backgroundColor: `${props.bgColor}`}}>
-      
-        <div className='lg:flex justify-around text-white   px-20'>
+  
+   
+    <div className='pt-10 px-10 py-20' style={{backgroundColor: `${props.bgColor}`}}>
+    
+        <div  className=' lg:flex text-white   ' >
             <Section >
-                <div className='flex '>
+                <div className='flex  '>
             <h1 className='text-2xl '>
                 P
             </h1>
@@ -49,35 +55,44 @@ function Colors(props) {
    
      </div>
      </Section>
-     <motion.div 
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              duration: 0.3,
-              ease: [0, 0.71, 0.2, 1.01],
-              scale: {
-                type: "spring",
-                damping: 5,
-                stiffness: 100,
-                restDelta: 0.001
-              }
-            }}
-          className='' >
-            <img src={props.displayImg} width={700}  className='border-4 md:mx-auto border-[#caede2]' />
+   
+      
+     <div className='w-[100%]  h-[500px] ' >
+             {/* className='border-4 md:mx-auto border-[#caede2]' */}
+             {/* camera={{ position: [-5, 10, -15], fov: 55 }}  */}
+             <Canvas  camera={props.camera}   >
+            
+            {/* <img src={props.displayImg}  />  */}
+            <Suspense fallback={null}  >
+            <pointLight position={[10, 10, 10]} rotation-y={3.5} intensity={1.5} />
+            <PresentationControls speed={0}  zoom={0}
+             polar={[-0.1,1.4, 5]} 
+             
+             >
+              <Stage environment={'dawn'}  >
+           
+                {props.model} 
+   
+            </Stage>
+            </PresentationControls>
+          </Suspense>
+          <ContactShadows position={[0, -4.5, 0]} scale={20} blur={2} far={4.5} />
+          <OrbitControls enablePan={false} enableZoom={true} zoomSpeed={0.75}  minPolarAngle={Math.PI / 15.5} maxPolarAngle={Math.PI / 2.2} />
+        
+          </Canvas>
             <div className=' mx-auto'>
-            <a className='' href={props.displayImg} download>
-                <Button className='text-black h-10 w-44 lg:mx-auto md:mx-auto flex gap-4 rounded-md my-8 ml-2 justify- items-center  bg-zinc-500 mx-auto'> <Download /> download</Button>
+            <a className=' bg-white'href={props.downloadImg} download>
+                <Button h className='text-black h-10 w-44 lg:mx-auto md:mx-auto flex gap-4 rounded-md my-8 ml-2 justify- items-center  bg-zinc-500 mx-auto' > <Download /> download</Button>
             </a>
             </div>
            
-            </motion.div>
+            </div>
         </div>
-        <div className=' w-full bg-bottom bg-fixed  ' 
-        style={{ height:'10px' } }>
-      
-        </div>
+
+   
        
     </div>
+
 
   )
 }
