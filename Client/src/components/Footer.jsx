@@ -1,10 +1,9 @@
-import React from 'react'
-import {Instagram , Linkedin ,Twitter,AtSign  } from 'lucide-react'
+import React, { useState } from 'react'
+import Section  from '../props/Section'
 // import animationData from '../assets/mail.json'
 // import Lottie from 'lottie-react'
-import Section  from './Section'
-import { useState } from 'react'
-import {Button, input} from "@material-tailwind/react";
+import {Instagram , Linkedin ,Twitter  } from 'lucide-react'
+import {Button} from "@material-tailwind/react";
 
 
 export const Footer = () => {

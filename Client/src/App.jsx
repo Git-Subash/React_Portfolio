@@ -1,17 +1,6 @@
-import Navbar from './components/Navbar'
-import { Home }  from './components/Home'
-import { About } from './components/About'
-import { Elevation } from './components/Elevation'
-import { Interior } from './components/Interior'
-import { Blueprint } from './components/Blueprint'
-import { Footer } from './components/Footer'
+import { Home, About,Elevation,Interior,Blueprint} from './pages/pages'
+import { Navbar, Footer } from './components/component';
 import { motion, useScroll, useSpring } from "framer-motion";
-
-
-
-
-
-
 
 function App() {
 
