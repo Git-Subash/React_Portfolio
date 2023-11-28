@@ -1,19 +1,20 @@
-import React from 'react'
+import {useState} from 'react'
 import Colors from '../props/Colors'
 import elevationBg from '../assets/backgrounds/elevation.svg'
 import sketchup from '../assets/logos/sketchup.png'
-// import Bedroom from '../models/bedroom'
-import Elev from '../models/elev'
+import Elev from '../models/Elev'
+
 
 
  export  const Elevation = () => {
+
   
   const model = '../assets/3d/bedroom.gbl'
   
   return (
     <main>
     {/* page-1 */}
-    <div id='Projects' className='min-h-screen bg-fixed px-10 xs:px-0 bg-gray-700  scroll-behavior: smooth' style={{backgroundImage : `url(${elevationBg})`}}>
+    <div id='Projects' className='min-h-screen bg-fixed px-10 xs:px-0 bg-gray-700  ' style={{backgroundImage : `url(${elevationBg})`}}>
          <div className='pt-40 items-center text-[#a6c69f] '>
     <div className='' 
     > 
@@ -35,8 +36,8 @@ import Elev from '../models/elev'
                 logo={sketchup}
                 logoName= 'sketchup'
                 // model = {<Bedroom  scale={0.1} rotation-y={3.5}/>}
-                model ={<Elev scale={0.01} rotation-y={2.6} />}
-                camera = {{ position :[-5.9,3.6,10], fov: 3 }}
+                model ={<Elev makeauto scale={0.01} rotation-y={2.6} rotation-z={0} rotation-x={0} />}
+                camera = {{ position :[-5.9,1.2,10], fov: 30}}
                 downloadImg={model}
                 colorTitle='Colors Used'
                 color1='#c3c3c3' 
@@ -64,7 +65,7 @@ import Elev from '../models/elev'
                  logo={sketchup}
                  logoName= 'sketchup'
                  model ={<Elev scale={0.01} rotation-y={2.6} />}
-                 camera = {{ position :[-5.9,3.6,10], fov: 3 }}
+                 camera = {{ position :[-5.9,1.2,10], fov: 30 }}
                  downloadImg={model}
                 color1='#c3c3c3' 
                 color2='#ba9a65'

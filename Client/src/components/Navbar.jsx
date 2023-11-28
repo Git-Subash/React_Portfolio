@@ -1,7 +1,9 @@
 import { Disclosure, } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import {motion} from "framer-motion"
+
  
+
 
 const navigation = [
   { name: 'Home', href: '#', current: true },
@@ -19,7 +21,7 @@ export default function Navbar() {
 
     
   return (
-    <Disclosure as="nav" className=" md:pt-20 pt-16 bg-transparent backdrop-blur-lg   drop-shadow-lg font-pop top-0 fixed right-0 w-full  overflow-hidden  ">
+    <Disclosure as="nav" className=" z-40 md:pt-20 pt-16 bg-transparent backdrop-blur-lg   drop-shadow-lg font-pop top-0 fixed right-0 w-full  overflow-hidden  ">
       {({ open }) => (
         <>
           <div className="mx-auto  min-w-7xl px-2 sm:px-6 lg:px-8  fixed top-0 w-full font-wal " >

@@ -2,14 +2,14 @@ import React from 'react'
 import Colors from '../props/Colors'
 import blueprintBg from '../assets/backgrounds/blueprint.png'
 import sketchup from '../assets/logos/sketchup.png'
-import p1 from '../assets/designs/P1.png'
+// import p1 from '../assets/designs/P1.png'
 import Bedroom from '../models/bedroom'
 
 
 export const Blueprint = () => {
   return (
     <main id='Blueprints' > 
-   <div className='min-h-screen bg-fixed px-10  xs:px-0 bg-cover bg-gray-700  scroll-behavior: smooth' style={{backgroundImage : `url(${blueprintBg})`}}>
+   <div className='min-h-screen bg-fixed px-10  xs:px-0 bg-cover bg-gray-700 ' style={{backgroundImage : `url(${blueprintBg})`}}>
          <div className='pt-40 md:px-20 items-center text-white  '>
      
     <div className='  data-aos="fade-right" data-aos-easing="ease-out"

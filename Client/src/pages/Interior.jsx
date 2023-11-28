@@ -16,8 +16,6 @@ export const Interior = () => {
        {/* page-1 */}
          <div id='Interior' className='min-h-screen bg-fixed    bg-no-repeat  bg-cover bg-gray-700 ' style={{backgroundImage : `url(${interiorBg})`}}>
          <div className='px-20 xs:px-0 pt-40 items-center text-emerald-200 '>
-    {/* <h1 className='font-pop text-7xl pl-4 text-[#d9d9d9]' >02</h1> */}
-
     <div className='  data-aos="fade-right" data-aos-easing="ease-out"
      data-aos-duration="4000"'  >
      <h1 className=' md:text-7xl  text-6xl font-wal tracking-wide pt-40 text-center   font-thin'data-aos="fade-up"

@@ -11,10 +11,10 @@ function App() {
     restDelta: 0.001
   });
   return (
-  < >
-  <motion.div className='h-2 z-10  rounded-r-full origin-left fixed bg-emerald-100 top-0 bottom-0 left-0 right-0 ' style={{ scaleX }} />
-  <div className=' scroll-smooth overflow-hidden'>
+ <>
 
+  <div className=' overflow-hidden scroll-smooth'>
+    <motion.div className='h-2 z-50  rounded-r-full origin-left fixed bg-emerald-100 top-0 bottom-0 left-0 right-0 ' style={{ scaleX }} />
      <Navbar  />
      <Home />
      <About />
@@ -22,10 +22,10 @@ function App() {
      <Interior />
      <Blueprint /> 
      <Footer />
-
     </div>
-     
-  </>
+    </>
+
+
   )
 }
 

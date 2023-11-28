@@ -1,13 +1,14 @@
 
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
+import {a} from '@react-spring/three'
 import elev from '../assets/3d/ele.glb'
 
 const  Elev = (props) => {
   const elevRef = useRef()  
   const { nodes, materials } = useGLTF(elev);
   return (
-    <group ref={elevRef}  {...props} >
+    <a.group ref={elevRef}  {...props} >
       <group scale={0.305}  >
         <mesh
           geometry={nodes.MeshChunk.geometry}
@@ -331,7 +332,7 @@ const  Elev = (props) => {
         material={materials["Material 1"]}
         scale={0.305}
       />
-    </group>
+    </a.group>
   );
 }
 
